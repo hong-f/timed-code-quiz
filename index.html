@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./Assets/style.css">
+
+
+    <title>High Score Challenge</title>
+</head>
+
+<body>
+    <!-- linking to highscores html -->
+    <a href="highscores.html">View Highscores</a>
+    <div id="wrapper">
+        <!-- timer div -->
+        <div id="currentTime"></div>
+        <!-- quiz content div -->
+        <div id="questionsDiv">
+            <h1>Coding Quiz Challenge</h1>
+            <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect
+                answers
+                will penalize your score/time by 15 seconds!</p>
+            <ul id="choicesUl"></ul>
+            <!-- buttons -->
+            <button id="startTime">Start Quiz</button>
+        </div>
+
+    </div>
+<!-- using seperate js for questions  -->
+    <script src="questions.js"></script>
+
+
+</body>
+
+</html>
