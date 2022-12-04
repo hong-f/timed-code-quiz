@@ -1,4 +1,4 @@
-// Var with array and object for questions 
+// quiz questions var
 var questions = [
     {
         title: "The first index of an array is:",
@@ -35,7 +35,7 @@ var questionIndex = 0;
 var currentTime = document.querySelector("#currentTime");
 var timer = document.querySelector("#startTime");
 var questionsDiv = document.querySelector("#questionsDiv");
-var wrapper = document.querySelector("#wrapper");
+var container = document.querySelector("#wrapper");
 
 // time left is 15 seconds per question:
 var secondsLeft = 90;
@@ -111,7 +111,7 @@ function compare(event) {
     if (questionIndex >= questions.length) {
         
         allDone();
-        createDiv.textContent = "End of quiz!" + " " + "You got  " + score + "/" + questions.length + " Correct!";
+        createDiv.textContent = "You got  " + score + "out of" + questions.length + " Correct.";
     } else {
         render(questionIndex);
     }
