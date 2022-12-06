@@ -85,7 +85,7 @@ function render(questionIndex) {
         listItem.addEventListener("click", (compare));
     })
 }
-// compare choice to actual answer
+// compare choices to actual answer
 function compare(event) {
     var element = event.target;
 
@@ -193,7 +193,7 @@ function allDone() {
             var newScore = JSON.stringify(allScores);
             localStorage.setItem("allScores", newScore);
             // routes to final page
-            window.location.replace("./HighScores.html");
+            window.location.replace("./highScores.html");
         }
     });
 
